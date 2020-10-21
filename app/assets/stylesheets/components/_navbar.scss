@@ -1,0 +1,17 @@
+.full-navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.navbar {
+  height: 60px;
+  background-color: transparent;;
+}
+.navlink {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    color: $cream;
+}
