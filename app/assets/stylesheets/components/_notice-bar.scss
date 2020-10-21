@@ -1,0 +1,13 @@
+.notice-bar {
+  background-color: $orange;
+  text-align: center;
+  width: 100vw;
+
+  p {
+  margin: 0;
+  padding: 8px;
+  color: $cream !important;
+  font-size: 15px;
+  font-weight: 600;
+  }
+}

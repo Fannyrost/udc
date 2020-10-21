@@ -1,5 +1,4 @@
 // Graphical variables
-@import "config/fonts";
 @import "config/colors";
 
 // External libraries
@@ -10,9 +9,10 @@
 @import "components/index";
 @import "pages/index";
 
-// Font
+// Fonts
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@300;400;600&display=swap');
+
 // Basics
 
 body {
@@ -21,7 +21,26 @@ body {
 
 h1 {
   font-family: 'Montserrat';
-  font-weight: 500;
+  font-weight: 600;
   font-size: 30px;
-  font-color: $gray;
+  color: $gray;
 }
+
+h2 {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 24px;
+  color: $gray;
+}
+
+p {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 18px;
+  color: $gray;
+}
+
+a {
+
+}
+
