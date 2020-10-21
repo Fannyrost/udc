@@ -1,0 +1,27 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+
+// External libraries
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+// Font
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@300;400;600&display=swap');
+// Basics
+
+body {
+  background-color: $cream;
+}
+
+h1 {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 30px;
+  font-color: $gray;
+}
