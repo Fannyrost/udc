@@ -1,0 +1,13 @@
+.shared-btn {
+  position: fixed;
+  top: 45vh;
+  right: 10px;
+  background-color: transparent;
+
+  a {
+    font-size: 25px;
+    padding: 8px;
+    color: $gray;
+  }
+
+}

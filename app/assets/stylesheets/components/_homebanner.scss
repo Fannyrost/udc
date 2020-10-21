@@ -4,7 +4,7 @@
   background-size: fit;
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  // position: absolute;
   top: 0px;
 
   h1, p {
@@ -36,4 +36,8 @@
     height: 50px;
     width: auto;
   }
+}
+
+#infos {
+  position: absolute;
 }
