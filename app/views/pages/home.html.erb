@@ -1,2 +1,17 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="homebanner">
+  <div class="homebanner-content mx-auto pt-64">
+    <div class="p-1"><h1>Ugo des Clas*Dorcamp</h1></div>
+    <div class="p-1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div>
+  </div>
+
+  <%= link_to '#infos' do  %>
+    <div class="bounce flex flex-col items-center">
+      <p class="pb-2">Découvrir</p>
+      <%= image_tag "arrow-down.png" %>
+    </div>
+  <% end %>
+</div>
+<div id="infos">
+  <p>hello</p>
+
+</div>
