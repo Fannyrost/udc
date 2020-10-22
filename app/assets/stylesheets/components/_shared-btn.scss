@@ -3,6 +3,7 @@
   top: 45vh;
   right: 10px;
   background-color: transparent;
+  z-index: 1000;
 
   a {
     font-size: 25px;
@@ -10,4 +11,28 @@
     color: $gray;
   }
 
+  .whatsapp-content-off  {
+    display: none;
+  }
+
+  .mail-content-off  {
+    display: none;
+  }
+
+  .messenger-content-off  {
+    display: none;
+  }
+
+  .whatsapp-content-on {
+    font-size: 14px;
+}
+
+
+  .mail-content-on {
+    font-size: 14px;
+  }
+
+  .messenger-content-on {
+    font-size: 14px;
+  }
 }

@@ -19,8 +19,9 @@ import "../stylesheets/application.scss"
 // const imagePath = (name) => images(name, true)
 
 import { initUpdateNavbarOnScroll } from '../components/navbar';
-
+import { sharingButtonsOnHover} from '../components/sharing-buttons';
 
 document.addEventListener('turbolinks:load', () => {
   initUpdateNavbarOnScroll();
+  sharingButtonsOnHover();
 });
