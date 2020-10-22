@@ -11,8 +11,21 @@
     </div>
   <% end %>
 </div>
-<div id="infos">
-  <p>hello</p>
-  <p>test</p>
+<div id="infos" class="m-12">
+  <h1>Titre 1</h1>
+
+  <div class="home-card flex justify-center items-center">
+    <div class="home-card-content">
+      <h2 class="">Titre 2</h2>
+      <p class="my-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <p class="my-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <%= render 'shared/orange-arrow-btn', path: presentation_path, text: "Présentation" %>
+      <%= render 'shared/blue-arrow-btn', path: gallery_path, text: "Galerie" %>
+    </div>
+    <div>
+      <%= image_tag "jump.png" %>
+    </div>
+
+  </div>
 
 </div>

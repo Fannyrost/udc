@@ -1,0 +1,21 @@
+.home-card {
+
+  .home-card-content {
+    background-color: $brown;
+    padding: 40px;
+    border-radius: 5px;
+    z-index: 2;
+    width: 35%;
+  }
+
+  img {
+    border-radius: 5px;
+    height: 600px;
+    width: 600px;
+    z-index: 1;
+    position: relative;
+    left: -40px;
+
+  }
+
+}
