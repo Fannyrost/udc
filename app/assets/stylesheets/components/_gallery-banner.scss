@@ -1,0 +1,43 @@
+.gallery-banner {
+  display: inline-block;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+
+  a {
+    .photo {
+      background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)), url(photo.jpg);
+      background-position: center;
+      background-size: cover;
+      width: 50vw;
+      height: 100vh;
+      transition: background-image 1s linear;
+
+      h1 {
+        color: $light-cream !important;
+      }
+
+      &:hover {
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url(photo.jpg);
+      }
+    }
+
+    .video {
+      background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)), url(video.jpg);
+      width: 50vw;
+      height: 100vh;
+      transition: background-image 1s ease;
+
+      h1 {
+        color: $light-cream !important;
+      }
+
+      &:hover {
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url(video.jpg);
+
+      }
+    }
+  }
+}
+
+
