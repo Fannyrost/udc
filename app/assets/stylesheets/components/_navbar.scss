@@ -1,5 +1,5 @@
 .full-navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
@@ -7,11 +7,27 @@
 
 .navbar {
   height: 60px;
-  background-color: transparent;;
+  width: 100vw;
+  background-color: transparent;
+
+  .navlink {
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-size: 18px;
+      color: $cream;
+  }
 }
-.navlink {
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 18px;
-    color: $cream;
+
+.navbar-white {
+  height: 60px;
+  width: 100vw;
+  background-color: $cream;
+  box-shadow:  0 4px 10px rgba(0,0,0,0.25);
+
+  .navlink {
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-size: 18px;
+      color: $gray;
+  }
 }
