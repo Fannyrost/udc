@@ -12,38 +12,21 @@
 </div>
 
 <div id="infos container">
-  <div class="m-12">
+  <div class="m-12" id="photo">
     <h1>Photos</h1>
     <div class="scrolling-wrapper">
-      <div class="thumb">
-        <a href="<%= image_path('gallery-test.png') %>" class="glightbox" data-gallery="gallery1">
-            <img src="<%= image_path('gallery-test.png') %>" alt="image">
-        </a>
-      </div>
-      <div class="thumb">
-        <a href="<%= image_path('gallery-test-2.jpg') %>" class="glightbox" data-gallery="gallery1">
-            <img src="<%= image_path('gallery-test-2.jpg') %>" alt="image">
-        </a>
-      </div>
-      <div class="thumb">
-        <a href="<%= image_path('portrait.jpg') %>" class="glightbox" data-gallery="gallery1">
-            <img src="<%= image_path('portrait.jpg') %>" alt="image">
-        </a>
-      </div>
-      <div class="thumb">
-        <a href="<%= image_path('ugo.jpg') %>" class="glightbox" data-gallery="gallery1">
-            <img src="<%= image_path('ugo.jpg') %>" alt="image">
-        </a>
-      </div>
-      <div class="thumb">
-        <a href="<%= image_path('jump.png') %>" class="glightbox" data-gallery="gallery1">
-            <img src="<%= image_path('jump.png') %>" alt="image">
-        </a>
-      </div>
+      <%= render 'shared/thumbnail', image: 'gallery-test.png' %>
+      <%= render 'shared/thumbnail', image: 'gallery-test-2.jpg' %>
+      <%= render 'shared/thumbnail', image: 'portrait.jpg' %>
+      <%= render 'shared/thumbnail', image: 'ugo.jpg' %>
     </div>
+  </div>
 
-
-
+  <div class="m-12" id="video">
+    <h1>Vidéos</h1>
+      <%= render 'shared/video-card-cl', title: "Titre 2", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", embeded_link: "https://www.youtube.com/embed/yXv8jVL9GJI"%>
+      <%= render 'shared/video-card-cr', title: "Titre 2", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", embeded_link: "https://www.youtube.com/embed/u8x6orVvhyc"%>
   </div>
 </div>
+<%= render 'shared/footer' %>
 
