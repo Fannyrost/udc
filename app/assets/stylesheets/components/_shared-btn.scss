@@ -3,11 +3,40 @@
   top: 45vh;
   right: 10px;
   background-color: transparent;
+  z-index: 1000;
 
   a {
     font-size: 25px;
     padding: 8px;
-    color: $gray;
+    color: $orange;
   }
 
+  i {
+    text-shadow:  0 0px 7px rgba(0,0,0,0.15)
+  }
+
+  .whatsapp-content-off  {
+    display: none;
+  }
+
+  .mail-content-off  {
+    display: none;
+  }
+
+  .messenger-content-off  {
+    display: none;
+  }
+
+  .whatsapp-content-on {
+    font-size: 14px;
+}
+
+
+  .mail-content-on {
+    font-size: 14px;
+  }
+
+  .messenger-content-on {
+    font-size: 14px;
+  }
 }

@@ -1,2 +1,32 @@
-<h1>Pages#gallery</h1>
-<p>Find me in app/views/pages/gallery.html.erb</p>
+<div class="gallery-banner flex justify-center">
+  <%= link_to '#photo' do  %>
+    <div class="photo flex justify-center items-center">
+      <h1>Photos</h1>
+    </div>
+  <% end %>
+  <%= link_to '#video' do  %>
+    <div class="video flex justify-center items-center">
+      <h1>Vidéos</h1>
+    </div>
+  <% end %>
+</div>
+
+<div id="infos container">
+  <div class="m-12" id="photo">
+    <h1>Photos</h1>
+    <div class="scrolling-wrapper">
+      <%= render 'shared/thumbnail', image: 'gallery-test.png' %>
+      <%= render 'shared/thumbnail', image: 'gallery-test-2.jpg' %>
+      <%= render 'shared/thumbnail', image: 'portrait.jpg' %>
+      <%= render 'shared/thumbnail', image: 'ugo.jpg' %>
+    </div>
+  </div>
+
+  <div class="m-12" id="video">
+    <h1>Vidéos</h1>
+      <%= render 'shared/video-card-cl', title: "Titre 2", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", embeded_link: "https://www.youtube.com/embed/yXv8jVL9GJI"%>
+      <%= render 'shared/video-card-cr', title: "Titre 2", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", embeded_link: "https://www.youtube.com/embed/u8x6orVvhyc"%>
+  </div>
+</div>
+<%= render 'shared/footer' %>
+

@@ -1,5 +1,5 @@
-<div class="shared-btn flex flex-col justify-center items-center">
-  <a href="whatsapp://send?text=<%= request.original_url %>"><i class="fab fa-whatsapp"></i></a>
-  <a href="mailto:?subject=Ugo des Clas&amp;body=Découvre le site ici <%= request.original_url %>"><i class="fas fa-paper-plane"></i></a>
-  <a href="fb-messenger://share/?link= <%= request.original_url %>”>Send In Messenger"><i class="fab fa-facebook-messenger"></i></a>
+<div class="shared-btn flex flex-col items-end">
+  <a href="whatsapp://send?text=<%= request.original_url %>" id="whatsapp" > <span class="whatsapp-content-off">Partager via Whatsapp</span>      <i class="fab fa-whatsapp"></i></a>
+  <a href="mailto:?subject=Ugo des Clas&amp;body=Découvre le site ici <%= request.original_url %>" id="mail"><span class="mail-content-off">Partager par email</span>       <i class="fas fa-paper-plane"></i></a>
+  <a href="fb-messenger://share/?link= <%= request.original_url %>”>Send In Messenger" id="messenger"><span class="messenger-content-off">Partager via Messenger</span>      <i class="fab fa-facebook-messenger"></i></a>
 </div>
