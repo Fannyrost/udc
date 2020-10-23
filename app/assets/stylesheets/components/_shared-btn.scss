@@ -4,15 +4,35 @@
   right: 10px;
   background-color: transparent;
   z-index: 1000;
+  width: 22vw;
+  text-align: right;
 
   a {
     font-size: 25px;
     padding: 8px;
-    color: $orange;
   }
 
-  i {
-    text-shadow:  0 0px 7px rgba(0,0,0,0.15)
+  p {
+    font-family: 'Montserrat';
+    font-weight: 500 !important;
+    text-shadow:  0 0px 7px rgba(0,0,0,0.15);
+
+  }
+
+  img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+    filter: grayscale(100%);
+
+    transition: filter 0.3s ease;
+    position: relative;
+    right: 0;
+    margin-left: 5px;
+
+    &:hover{
+      filter: grayscale(5%);
+    }
   }
 
   .whatsapp-content-off  {
@@ -25,18 +45,5 @@
 
   .messenger-content-off  {
     display: none;
-  }
-
-  .whatsapp-content-on {
-    font-size: 14px;
-}
-
-
-  .mail-content-on {
-    font-size: 14px;
-  }
-
-  .messenger-content-on {
-    font-size: 14px;
   }
 }
