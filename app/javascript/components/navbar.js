@@ -6,10 +6,10 @@ const initUpdateNavbarOnScroll = () => {
       const notice = document.querySelector('.notice-bar');
       if (window.scrollY >= window.innerHeight) {
         navbar.classList.add('navbar-white');
-        notice.classList.add('notice-bar-off');
+        if (notice) {notice.classList.add('notice-bar-off')}
       } else {
         navbar.classList.remove('navbar-white');
-        notice.classList.remove('notice-bar-off');
+        if (notice) {notice.classList.remove('notice-bar-off')};
       }
     });
   }
