@@ -1,0 +1,40 @@
+.title {
+  width: 100%;
+  // text-align: center;
+}
+
+.barre {
+  width: 175px;
+
+  .barre-left {
+    float: left;
+    background-color: $orange;
+    border-radius: 5px 0px 0px 5px;
+    width: 35px;
+    height: 6px;
+  }
+
+  .barre-right {
+    float: right;
+    background-color: $orange;
+    border-radius: 0px 5px 5px 0px;
+    width: 5rem;
+    width: 35px;
+    height: 6px;
+  }
+
+  .barre-white {
+    float: right;
+    background-color: $cream;
+    border: 0.5px $orange solid;
+    width: 35px;
+    height: 6px;
+  }
+
+  .barre-orange {
+    float: right;
+    background-color: $orange;
+    width: 35px;
+    height: 6px;
+  }
+}
