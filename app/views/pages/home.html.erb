@@ -1,15 +1,10 @@
 <div class="homebanner">
-  <div class="homebanner-content mx-auto pt-64">
-    <div class="p-1"><h1>Ugo des Clas*Dorcamp</h1></div>
-    <div class="p-1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div>
-  </div>
-
-  <%= link_to '#infos' do  %>
-    <div class="bounce flex flex-col items-center">
-      <p class="pb-2">Découvrir</p>
+<!--   <%= link_to '#infos' do  %>
+    <div class="flex flex-col items-center mx-auto mt-64">
+      <p class="pb-2 mt-64 pt-32 shadowedtext">Découvrir</p>
       <%= image_tag "arrow-down.png" %>
     </div>
-  <% end %>
+  <% end %> -->
 </div>
 <div id="infos">
   <div class="m-12">
@@ -22,14 +17,30 @@
         <%= render 'shared/orange-arrow-btn', path: presentation_path, text: "Présentation" %>
         <%= render 'shared/blue-arrow-btn', path: gallery_path, text: "Galerie" %>
       </div>
-      <div>
+      <div class="rellax">
         <%= image_tag "jump.png" %>
       </div>
     </div>
   </div>
   <div class="brown-bg">
-    <div class="m-12">
-      <p>test</p>
+    <div class="my-12 mx-32 flex justify-between items-start">
+      <div class="icons flex flex-col items-center">
+        <%= image_tag "sparkles", alt: "alttext" %>
+        <h3>Charisme</h3>
+      </div>
+      <div class="icons flex flex-col items-center">
+        <%= image_tag "fiery", alt: "alttext" %>
+        <h3>Sang</h3>
+      </div>
+      <div class="icons flex flex-col items-center">
+        <%= image_tag "balanced", alt: "alttext" %>
+        <h3>Equilibre</h3>
+      </div>
+      <div class="icons flex flex-col items-center">
+        <%= image_tag "horseshoe", alt: "alttext" %>
+        <h3>Galop</h3>
+      </div>
+
     </div>
   </div>
   <div class="pic-banner flex justify-center items-center" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url(<%= image_path('portrait.jpg') %>);">

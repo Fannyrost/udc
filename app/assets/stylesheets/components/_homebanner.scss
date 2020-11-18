@@ -4,11 +4,11 @@
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  // position: absolute;
+  position: relative;
   top: 0px;
 
   h1, p {
-    color: $light-cream !important;
+    color: $cream !important;
   }
 
   .homebanner-content {
@@ -16,19 +16,20 @@
     text-align: center;
   }
 
-  .bounce {
+  .shadowedtext {
     position: relative;
     bottom: -12rem;
-    animation-name: bounce;
+    text-shadow:  0 0px 7px rgba(246,245,244,0.15);
+    animation-name: shadowtext;
     animation-duration: 2s;
     animation-iteration-count: infinite;
   }
 
-  @keyframes bounce {
-    0% {bottom: -12rem;}
-    25%, 75% {bottom: -11.9rem;}
-    50% {bottom: -11.8rem;}
-    100% {bottom: -12rem;}
+  @keyframes shadowtext {
+    0% { text-shadow:  0 0px 7px rgba(246,245,244,0.15);}
+    25%, 75% { text-shadow:  0 0px 10px rgba(246,245,244,0.20);}
+    50% { text-shadow:  0 0px 12px rgba(246,245,244,0.25);}
+    100% { text-shadow:  0 0px 7px rgba(246,245,244,0.15);}
   }
 
   img {
@@ -40,4 +41,13 @@
 
 #infos {
   position: absolute;
+}
+
+
+
+
+@media (max-width: 720px) {
+  .homebanner-content {
+    width: 85% !important;
+  }
 }
