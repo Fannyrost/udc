@@ -6,19 +6,20 @@
 
   a {
     .photo {
-      background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)), url(photo.jpg);
+      background-image: url(photo.jpg);
       background-position: center;
       background-size: cover;
       width: 50vw;
       height: 100vh;
-      transition: background-image 1s linear;
+      transition: filter 1s linear;
+      filter: greyscale(100%);
 
       h1 {
-        color: $light-cream !important;
+        color: $cream !important;
       }
 
       &:hover {
-        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url(photo.jpg);
+        filter: greyscale(10%) ;
       }
     }
 

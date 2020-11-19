@@ -1,32 +1,48 @@
-<div class="gallery-banner flex justify-center">
-  <%= link_to '#photo' do  %>
-    <div class="photo flex justify-center items-center">
-      <h1>Photos</h1>
-    </div>
-  <% end %>
-  <%= link_to '#video' do  %>
-    <div class="video flex justify-center items-center">
-      <h1>Vidéos</h1>
-    </div>
-  <% end %>
+<%= render 'shared/regular-banner', photo: 'gallery-test-2.jpg', title: 'Photos & Vidéos' %>
+
+<%= render 'shared/barre', title: 'Photos' %>
+<div class=" wrapper grid grid-cols-4 grid-rows-3 gap-4 mb-16">
+  <div class="one img-gallery col-span-1">
+    <a href="<%= image_path 'gallery-test.png' %>" class="glightbox" data-gallery="gallery1">
+        <img src="<%= image_path 'gallery-test.png' %>" alt="image" class= 'object-cover object-center' >
+    </a>
+  </div>
+  <div class="two img-gallery col-span-1 row-span-2">
+    <a href="<%= image_path 'gallery-test.png' %>" class="glightbox" data-gallery="gallery1">
+        <img src="<%= image_path 'gallery-test.png' %>" alt="image" class= 'object-cover object-center' >
+    </a>
+  </div>
+  <div class="three img-gallery col-span-1">
+    <a href="<%= image_path 'gallery-test.png' %>" class="glightbox" data-gallery="gallery1">
+        <img src="<%= image_path 'gallery-test.png' %>" alt="image" class= 'object-cover object-center' >
+    </a>
+  </div>
+  <div class="four img-gallery col-span-1">
+    <a href="<%= image_path 'gallery-test.png' %>" class="glightbox" data-gallery="gallery1">
+        <img src="<%= image_path 'gallery-test.png' %>" alt="image" class= 'object-cover object-center' >
+    </a>
+  </div>
+  <div class="five img-gallery col-span-1">
+    <a href="<%= image_path 'gallery-test.png' %>" class="glightbox" data-gallery="gallery1">
+        <img src="<%= image_path 'gallery-test.png' %>" alt="image" class= 'object-cover object-center' >
+    </a>
+  </div>
+  <div class="six img-gallery col-span-2 row-span-2">
+    <a href="<%= image_path 'gallery-test.png' %>" class="glightbox" data-gallery="gallery1">
+        <img src="<%= image_path 'gallery-test.png' %>" alt="image" class= 'object-cover object-center' >
+    </a>
+  </div>
+  <div class="seven img-gallery col-span-2">
+    <a href="<%= image_path 'gallery-test.png' %>" class="glightbox" data-gallery="gallery1">
+        <img src="<%= image_path 'gallery-test.png' %>" alt="image" class= 'object-cover object-center' >
+    </a>
+  </div>
 </div>
 
-<div id="infos container">
-  <div class="m-12" id="photo">
-    <h1>Photos</h1>
-    <div class="scrolling-wrapper">
-      <%= render 'shared/thumbnail', image: 'gallery-test.png' %>
-      <%= render 'shared/thumbnail', image: 'gallery-test-2.jpg' %>
-      <%= render 'shared/thumbnail', image: 'portrait.jpg' %>
-      <%= render 'shared/thumbnail', image: 'ugo.jpg' %>
-    </div>
-  </div>
+<div class="brown-bg">
+  <%= render 'shared/barre', title: 'Vidéos'  %>
+  <%= render 'shared/video-card-cl', title: 'Test Vidéo', description: 'Test vidéo', embeded_link: "https://www.youtube.com/embed/Yh06kBRaMF0" %>
 
-  <div class="m-12" id="video">
-    <h1>Vidéos</h1>
-      <%= render 'shared/video-card-cl', title: "Titre 2", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", embeded_link: "https://www.youtube.com/embed/yXv8jVL9GJI"%>
-      <%= render 'shared/video-card-cr', title: "Titre 2", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", embeded_link: "https://www.youtube.com/embed/u8x6orVvhyc"%>
-  </div>
 </div>
+
 <%= render 'shared/footer' %>
-

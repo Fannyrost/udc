@@ -1,0 +1,21 @@
+<div class=" full-navbar">
+  <%= render 'shared/insta-bar' %>
+  <div class="navbar">
+    <a href="" class="logo">
+      <div class="flex flex-col items-center">
+        <h1>Ugo des Clas</h1>
+        <p>Etalon français de selle</p>
+      </div>
+    </a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="<%= root_path %>">Accueil</a></li>
+      <li><a href="<%= presentation_path %>">Présentation</a></li>
+      <li><a href="<%= gallery_path %>">Galerie</a></li>
+      <li><a href="<%= production_path %>">Production</a></li>
+      <li><a href="<%= contact_path %>">Contact</a></li>
+      <li class="orange-btn" style="margin-top: 10px; margin-right: 5px;"><a href="<%= saillie_path %>" style="padding: 2px 20px !important;">Réserver une saillie</a></li>
+    </div>
+  </ul>
+</div>

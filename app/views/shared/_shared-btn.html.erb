@@ -1,5 +1,22 @@
 <div class="shared-btn flex flex-col items-end">
-  <a href="whatsapp://send?text=<%= request.original_url %>" id="whatsapp" > <span class="whatsapp-content-off">Partager via Whatsapp</span>      <i class="fab fa-whatsapp"></i></a>
-  <a href="mailto:?subject=Ugo des Clas&amp;body=Découvre le site ici <%= request.original_url %>" id="mail"><span class="mail-content-off">Partager par email</span>       <i class="fas fa-paper-plane"></i></a>
-  <a href="fb-messenger://share/?link= <%= request.original_url %>”>Send In Messenger" id="messenger"><span class="messenger-content-off">Partager via Messenger</span>      <i class="fab fa-facebook-messenger"></i></a>
+  <a href="whatsapp://send?text=<%= request.original_url %>">
+    <div id="whatsapp" class="flex justify-end">
+      <p class="whatsapp-content-off">Partager via Whatsapp</p>
+      <img src="<%= image_path('whatsapp.png') %>">
+    </div>
+  </a>
+
+  <a href="mailto:?subject=Ugo des Clas&amp;body=Découvre le site ici <%= request.original_url %>">
+    <div id="mail" class="flex justify-end">
+      <p class="mail-content-off">Partager via Email</p>
+      <img src="<%= image_path('mail.png') %>">
+    </div>
+  </a>
+
+  <a href="fb-messenger://share/?link= <%= request.original_url %>">
+    <div id="messenger" class="flex justify-end">
+      <p class="messenger-content-off">Partager via Messenger</p>
+      <img src="<%= image_path('messenger.png') %>">
+    </div>
+  </a>
 </div>

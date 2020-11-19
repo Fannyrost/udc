@@ -1,0 +1,48 @@
+.homebanner {
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url(ugo.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  top: 0px;
+
+  h1, p {
+    color: $cream !important;
+  }
+
+  .homebanner-content {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+#infos {
+  position: absolute;
+}
+
+.regular-banner {
+
+  height: 36rem;
+  position: relative;
+  top: 0px;
+  background-position: center;
+  background-size: cover;
+
+  h1, p {
+    color: $cream !important;
+  }
+
+  .banner-content {
+    text-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    text-align: center;
+  }
+
+}
+
+
+@media (max-width: 720px) {
+  .homebanner-content {
+    width: 85% !important;
+  }
+}
