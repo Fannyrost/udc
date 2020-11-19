@@ -1,2 +1,13 @@
-<h1>Pages#presentation</h1>
-<p>Find me in app/views/pages/presentation.html.erb</p>
+<%= render 'shared/regular-banner', photo: 'gallery-test-2.jpg', title: 'Présentation' %>
+
+<div class="absolute my-2 w-full">
+  <%= render 'shared/barre', title: 'Caractéristiques' %>
+
+
+  <div class="brown-bg">
+    <%= render 'shared/barre', title: 'Pedigree' %>
+
+
+  </div>
+  <%= render 'shared/barre', title: 'Performance' %>
+</div>

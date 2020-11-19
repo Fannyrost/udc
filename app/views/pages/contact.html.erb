@@ -1,2 +1,10 @@
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+<div class="pic-banner flex justify-center items-center" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url(<%= image_path('portrait.jpg') %>);">
+  <div class="pic-banner-content">
+    <h2 class="text-center">Contact</h2>
+    <p class="my-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    <div class="flex justify-around items-center mx-auto">
+      <%= render 'shared/blue-arrow-btn', path: saillie_path, text: "Réservez une saillie", width: '170px' %>
+    </div>
+  </div>
+</div>
+
