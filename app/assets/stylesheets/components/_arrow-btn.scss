@@ -1,23 +1,28 @@
 .orange-arrow {
-  width: 100px;
-
   p, a {
    color: $orange !important;
    margin-right: 8px;
   }
 
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 
 .blue-arrow {
-
-  width: 100px;
-
   p, a {
    color: $blue !important;
    margin-right: 8px;
   }
 
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 
