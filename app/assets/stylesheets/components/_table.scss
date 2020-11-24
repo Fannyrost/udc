@@ -1,0 +1,40 @@
+.tables {
+  box-shadow:  0 4px 10px rgba(0,0,0,0.25);
+  i {
+    color: $orange;
+  }
+
+  .label {
+    font-weight: bold !important;
+  }
+}
+
+.legend {
+  font-style: italic !important;
+  font-weight: light !important;;
+  font-size: 13px !important;;
+}
+
+.price {
+  color: $orange !important;
+  font-weight: bold !important;
+}
+
+.table-light-up {
+
+  background-color: $cream;
+  border-radius: 5px 5px 0px 0px
+
+}
+
+.table-dark {
+
+  background-color: $light-brown;
+}
+
+.table-light-down {
+
+  background-color: $cream;
+  border-radius: 0px 0px 5px 5px
+
+}
