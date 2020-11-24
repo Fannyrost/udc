@@ -1,0 +1,13 @@
+.perf-list {
+  background-image: url('/assets/trophy.png');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+
+  ul {
+    list-style: url('/assets/list-bullet.png') !important;
+  }
+
+  .perf-list-content {
+    width: 60vw;
+  }
+}

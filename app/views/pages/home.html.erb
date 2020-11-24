@@ -1,31 +1,35 @@
 <div class="homebanner">
 
 </div>
-<div id="infos">
-  <div class="m-12">
-    <h1>Titre 1</h1>
-    <div class="home-card flex justify-center items-center">
-      <div class="home-card-content">
-        <h2 class="">Titre 2</h2>
-        <p class="my-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <p class="my-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <%= render 'shared/orange-arrow-btn', path: presentation_path, text: "Présentation" %>
-        <%= render 'shared/blue-arrow-btn', path: gallery_path, text: "Galerie" %>
-      </div>
-      <div class="rellax">
-        <%= image_tag "jump.png" %>
-      </div>
+<div class="absolute my-2">
+
+  <%= render 'shared/barre', title: 'Présentation' %>
+
+  <div class="home-card flex justify-center items-center mb-16">
+    <div class="home-card-content p-4 mr-32">
+      <h2 class="">Titre 2</h2>
+      <p class="my-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <p class="my-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <%= render 'shared/orange-arrow-btn', path: presentation_path, text: "Présentation", width: '115px' %>
+      <%= render 'shared/blue-arrow-btn', path: gallery_path, text: "Galerie", width: '77px' %>
+    </div>
+    <div class="rellax">
+      <%= image_tag "jump.png" %>
     </div>
   </div>
+
   <div class="pic-banner flex justify-center items-center" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url(<%= image_path('portrait.jpg') %>);">
     <div class="pic-banner-content">
       <h2 class="text-center">Titre 2</h2>
       <p class="my-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-      <div class="flex justify-around items-center mx-auto" style="width: 60%;">
-        <%= render 'shared/orange-btn', path: production_path, text: "Découvrir ses poulains" %>
-        <%= render 'shared/orange-btn', path: saillie_path, text: "Réservez une saillie" %>
+      <div class="flex justify-around items-center mx-auto">
+        <%= render 'shared/orange-arrow-btn', path: production_path, text: "Découvrir ses poulains", width: '185px' %>
+        <%= render 'shared/blue-arrow-btn', path: saillie_path, text: "Réservez une saillie", width: '170px' %>
       </div>
     </div>
   </div>
+  <%= render 'shared/barre', title: 'Instagram' %>
+  <%= render 'shared/orange-arrow-btn', path: "https://www.instagram.com/elevagedorcamp/", text: "Voir la page Instagram", width: '190px' %>
+
   <%= render 'shared/footer' %>
 </div>
