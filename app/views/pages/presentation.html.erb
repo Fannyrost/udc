@@ -2,7 +2,33 @@
 
 <div class="absolute mt-2 w-full">
   <%= render 'shared/barre', title: 'Caractéristiques' %>
+  <div class="flex justify-between items-center mx-20 property mb-12">
+    <div>
+      <%= image_tag "jump.png" %>
+    </div>
+    <div class="flex flex-col justify-start w-2/5 ml-6">
+      <div class="flex justify-between">
+        <div><p class="price">Taille</p></div>
+        <div><p>1,50m ferré</p></div>
+      </div>
+      <div class="flex justify-between">
+        <div><p class="price">Robe</p></div>
+        <div><p>Bai</p></div>
+      </div>
+      <div class="flex justify-between">
+        <div><p class="price">Année de naissance</p></div>
+        <div><p>2008</p></div>
+      </div>
 
+      <div class="mt-10 mb-2">
+        <p>Poney Français de Selle</p>
+      </div>
+      <div>
+        <p>Performant sur 1,25m - 1,30m chevaux</p>
+      </div>
+    </div>
+
+  </div>
 
   <div class="brown-bg">
     <%= render 'shared/barre', title: 'Pedigree' %>
