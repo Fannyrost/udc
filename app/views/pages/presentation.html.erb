@@ -27,13 +27,15 @@
         <p>Performant sur 1,25m - 1,30m chevaux</p>
       </div>
     </div>
-
   </div>
 
   <div class="brown-bg">
     <%= render 'shared/barre', title: 'Pedigree' %>
     <%= image_tag "pedigree.png", alt: "alttext" %>
-
+    <div class="flex justify-around my-10 mx-20">
+      <%= render 'shared/horse-card', horse: @father %>
+      <%= render 'shared/horse-card', horse: @mother %>
+    </div>
   </div>
 
   <div class="perf-list  pb-10">
