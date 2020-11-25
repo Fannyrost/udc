@@ -1,16 +1,21 @@
 .orange-btn {
   background-color: $orange;
-  color: $cream;
+  color: $cream !important;
   height: 40px;
   padding: 8px 15px ;
   border-radius: 5px;
-  font-weight: bold;
-  font-family: 'Merriweather';
-  font-size: 15px;
+  transition: transform 0.3s;
 
   a {
-    padding: 0;
     margin: 0;
+    font-weight: bold;
+    font-family: 'Merriweather';
+    font-size: 15px;
   }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
 
 }

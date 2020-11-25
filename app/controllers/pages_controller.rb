@@ -3,6 +3,9 @@ class PagesController < ApplicationController
   end
 
   def presentation
+    @mother = Production.find_by(mother: "Mère")
+    @father = Production.find_by(mother: "Père")
+
   end
 
   def gallery

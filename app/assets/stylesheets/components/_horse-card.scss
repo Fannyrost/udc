@@ -1,0 +1,69 @@
+.horse-card {
+  width: 500px;
+  height: 360px;
+
+
+  perspective: 1000px;
+
+  .horse-card-inner {
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+
+  .horse-card-picture {
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    text-align: center;
+    color: $cream !important;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .horse-card-desc {
+    width: 120%;
+  }
+
+  .horse-card-content {
+    background-color: $cream;
+    border-radius: 0px 0px 5px 5px;
+  }
+
+  .horse-card-icons {
+    p {
+      font-weight: lighter !important;
+      font-size: 12px !important;
+    }
+
+    i {
+      color: $orange;
+    }
+  }
+
+  &:hover {
+
+    .horse-card-inner {
+      transform: rotateY(180deg);
+    }
+
+  }
+
+  .horse-card-front, .horse-card-back {
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    position: absolute;
+    box-shadow:  0 4px 10px rgba(0,0,0,0.25);
+  }
+
+  .horse-card-back {
+    transform: rotateY(180deg);
+    background-color: $cream;
+    border-radius: 5px;
+    width: 500px;
+    height: 360px;
+    text-align: center;
+    margin: auto 0px;
+  }
+
+}
+
