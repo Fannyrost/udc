@@ -1,13 +1,57 @@
 <%= render 'shared/regular-banner', photo: 'gallery-test-2.jpg', title: 'Production' %>
 
 <div class="absolute my-2 w-full">
-  <%= render 'shared/barre', title: 'Poulain' %>
-
+  <%= render 'shared/barre', title: 'Poulains' %>
+  <div class="scrolling-wrapper mx-20 mb-20">
+    <% @horses.each do | horse |%>
+      <%=  render 'shared/horse-card', horse: horse %>
+    <% end %>
+  </div>
 
   <div class="brown-bg">
     <%= render 'shared/barre', title: 'Héritage' %>
-
-
+    <div class=" mx-32">
+      <div class="flex justify-around items-start">
+        <div class="w-64">
+          <div class="flex justify-center items-center">
+            <div class="mr-6"><img src="<%= image_path 'list-bullet.png' %> "></div>
+            <div><h2>Titre</h2></div>
+          </div>
+          <div class="text-center mt-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+        </div>
+        <div class="w-64">
+          <div class="flex justify-center items-center">
+            <div class="mr-6"><img src="<%= image_path 'list-bullet.png' %> "></div>
+            <div><h2>Titre</h2></div>
+          </div>
+          <div class="text-center mt-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-around items-start mt-20">
+        <div class="w-64">
+          <div class="flex justify-center items-center">
+            <div class="mr-6"><img src="<%= image_path 'list-bullet.png' %> "></div>
+            <div><h2>Titre</h2></div>
+          </div>
+          <div class="text-center mt-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+        </div>
+        <div class="w-64">
+          <div class="flex justify-center items-center">
+            <div class="mr-6"><img src="<%= image_path 'list-bullet.png' %> "></div>
+            <div><h2>Titre</h2></div>
+          </div>
+          <div class="text-center mt-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="pic-banner flex justify-center items-center" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url(<%= image_path('portrait.jpg') %>);">
     <div class="pic-banner-content">

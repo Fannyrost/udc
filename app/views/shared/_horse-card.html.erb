@@ -1,9 +1,9 @@
-<div class="horse-card">
+<div class="horse-card mx-5">
   <div class="horse-card-inner">
     <div class="horse-card-front">
       <div class="horse-card-picture", style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url(<%= image_path 'photo.jpg' %>);">
-        <p><%= horse.mother %></p>
-        <h3><%= horse.name %></h3>
+        <p class="pt-2"><%= horse.mother.upcase %></p>
+        <h2><%= horse.name %></h2>
       </div>
       <div class="horse-card-content flex justify-between p-3">
         <div class="flex flex-col items-start mr-4  horse-card-icons">
@@ -11,12 +11,12 @@
             <div class="mr-4"><i class="fas fa-arrows-alt-v"></i></div>
             <div> <p><%= horse.size %></p> </div>
           </div>
-          <div class="flex items-center">
+          <div class="flex items-center mt-2 ">
             <div class="mr-2"><i class="fas fa-trophy"></i></div>
             <div><p><%= horse.win %></p> </div>
           </div>
         </div>
-        <div class="horse-card-desc">
+        <div class="horse-card-desc w-full">
           <p><%= horse.short_description %></p>
         </div>
       </div>
